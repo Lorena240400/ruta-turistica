@@ -127,11 +127,209 @@ and open the template in the editor.
                     }
                 }
                 //Cargar un geoJSON en un momento dado
-                if(Cesium.JulianDate.secondsDifference(visor.clock.currentTime,visor.clock.startTime)>13 && carga==false){
-                     agregarGeojson('corferias.geojson',false);
+                if(Cesium.JulianDate.secondsDifference(visor.clock.currentTime,visor.clock.startTime)>3 && carga==false){
+                     agregarGeojson('bibliotecaluisangel.geojson',false);
                      carga=true;
                 }
-                
+            
+            var carga1=false;
+            if (!Cesium.defined(miEntidad)) {
+                    pancarta.style.display = 'none';
+                } else {
+                    pancarta.style.display = 'block';
+                    
+                    if(miEntidad.position !== null && miEntidad.position !== undefined){
+                    var position = miEntidad.position.getValue(clock.currentTime);
+                    Cesium.Ellipsoid.WGS84.cartesianToCartographic(position, cartographic);
+                    pancarta.innerHTML =
+                        'Longitud: ' + Cesium.Math.toDegrees(cartographic.longitude).toFixed(3) + ' <br/>' +
+                        'Latitud: ' + Cesium.Math.toDegrees(cartographic.latitude).toFixed(3) + ' <br/>' +
+                        'Altura: ' + (cartographic.height * 0.001) + ' km' + ' <br/>' +
+                        'Tiempo Actual: ' + visor.clock.currentTime + '<br>';
+                    }
+                }
+                //Cargar un geoJSON en un momento dado
+                if(Cesium.JulianDate.secondsDifference(visor.clock.currentTime,visor.clock.startTime)>14 && carga1==false){
+                     agregarGeojson('palaciodejusticia.geojson',false);
+                     carga1=true;
+                }
+            
+            var carga2=false;
+             if (!Cesium.defined(miEntidad)) {
+                    pancarta.style.display = 'none';
+                } else {
+                    pancarta.style.display = 'block';
+                    
+                    if(miEntidad.position !== null && miEntidad.position !== undefined){
+                    var position = miEntidad.position.getValue(clock.currentTime);
+                    Cesium.Ellipsoid.WGS84.cartesianToCartographic(position, cartographic);
+                    pancarta.innerHTML =
+                        'Longitud: ' + Cesium.Math.toDegrees(cartographic.longitude).toFixed(3) + ' <br/>' +
+                        'Latitud: ' + Cesium.Math.toDegrees(cartographic.latitude).toFixed(3) + ' <br/>' +
+                        'Altura: ' + (cartographic.height * 0.001) + ' km' + ' <br/>' +
+                        'Tiempo Actual: ' + visor.clock.currentTime + '<br>';
+                    }
+                }
+                //Cargar un geoJSON en un momento dado
+                if(Cesium.JulianDate.secondsDifference(visor.clock.currentTime,visor.clock.startTime)>55 && carga2==false){
+                     agregarGeojson('parqueindependencia.geojson',false);
+                     carga2=true;
+                }
+            
+            var carga3=false;
+             if (!Cesium.defined(miEntidad)) {
+                    pancarta.style.display = 'none';
+                } else {
+                    pancarta.style.display = 'block';
+                    
+                    if(miEntidad.position !== null && miEntidad.position !== undefined){
+                    var position = miEntidad.position.getValue(clock.currentTime);
+                    Cesium.Ellipsoid.WGS84.cartesianToCartographic(position, cartographic);
+                    pancarta.innerHTML =
+                        'Longitud: ' + Cesium.Math.toDegrees(cartographic.longitude).toFixed(3) + ' <br/>' +
+                        'Latitud: ' + Cesium.Math.toDegrees(cartographic.latitude).toFixed(3) + ' <br/>' +
+                        'Altura: ' + (cartographic.height * 0.001) + ' km' + ' <br/>' +
+                        'Tiempo Actual: ' + visor.clock.currentTime + '<br>';
+                    }
+                }
+                //Cargar un geoJSON en un momento dado
+                if(Cesium.JulianDate.secondsDifference(visor.clock.currentTime,visor.clock.startTime)>64 && carga3==false){
+                     agregarGeojson('planetario.geojson',false);
+                     carga3=true;
+                }
+            
+            var carga4=false;
+             if (!Cesium.defined(miEntidad)) {
+                    pancarta.style.display = 'none';
+                } else {
+                    pancarta.style.display = 'block';
+                    
+                    if(miEntidad.position !== null && miEntidad.position !== undefined){
+                    var position = miEntidad.position.getValue(clock.currentTime);
+                    Cesium.Ellipsoid.WGS84.cartesianToCartographic(position, cartographic);
+                    pancarta.innerHTML =
+                        'Longitud: ' + Cesium.Math.toDegrees(cartographic.longitude).toFixed(3) + ' <br/>' +
+                        'Latitud: ' + Cesium.Math.toDegrees(cartographic.latitude).toFixed(3) + ' <br/>' +
+                        'Altura: ' + (cartographic.height * 0.001) + ' km' + ' <br/>' +
+                        'Tiempo Actual: ' + visor.clock.currentTime + '<br>';
+                    }
+                }
+                //Cargar un geoJSON en un momento dado
+                if(Cesium.JulianDate.secondsDifference(visor.clock.currentTime,visor.clock.startTime)>75 && carga4==false){
+                     agregarGeojson('museonacional.geojson',false);
+                     carga4=true;
+                }
+            
+            var carga5=false;
+             if (!Cesium.defined(miEntidad)) {
+                    pancarta.style.display = 'none';
+                } else {
+                    pancarta.style.display = 'block';
+                    
+                    if(miEntidad.position !== null && miEntidad.position !== undefined){
+                    var position = miEntidad.position.getValue(clock.currentTime);
+                    Cesium.Ellipsoid.WGS84.cartesianToCartographic(position, cartographic);
+                    pancarta.innerHTML =
+                        'Longitud: ' + Cesium.Math.toDegrees(cartographic.longitude).toFixed(3) + ' <br/>' +
+                        'Latitud: ' + Cesium.Math.toDegrees(cartographic.latitude).toFixed(3) + ' <br/>' +
+                        'Altura: ' + (cartographic.height * 0.001) + ' km' + ' <br/>' +
+                        'Tiempo Actual: ' + visor.clock.currentTime + '<br>';
+                    }
+                }
+                //Cargar un geoJSON en un momento dado
+                if(Cesium.JulianDate.secondsDifference(visor.clock.currentTime,visor.clock.startTime)>104 && carga5==false){
+                     agregarGeojson('parquenacional.geojson',false);
+                     carga5=true;
+                }
+            
+            var carga6=false;
+             if (!Cesium.defined(miEntidad)) {
+                    pancarta.style.display = 'none';
+                } else {
+                    pancarta.style.display = 'block';
+                    
+                    if(miEntidad.position !== null && miEntidad.position !== undefined){
+                    var position = miEntidad.position.getValue(clock.currentTime);
+                    Cesium.Ellipsoid.WGS84.cartesianToCartographic(position, cartographic);
+                    pancarta.innerHTML =
+                        'Longitud: ' + Cesium.Math.toDegrees(cartographic.longitude).toFixed(3) + ' <br/>' +
+                        'Latitud: ' + Cesium.Math.toDegrees(cartographic.latitude).toFixed(3) + ' <br/>' +
+                        'Altura: ' + (cartographic.height * 0.001) + ' km' + ' <br/>' +
+                        'Tiempo Actual: ' + visor.clock.currentTime + '<br>';
+                    }
+                }
+                //Cargar un geoJSON en un momento dado
+                if(Cesium.JulianDate.secondsDifference(visor.clock.currentTime,visor.clock.startTime)>166 && carga6==false){
+                     agregarGeojson('parquelourdes.geojson',false);
+                     carga6=true;
+                }
+            
+            var carga7=false;
+             if (!Cesium.defined(miEntidad)) {
+                    pancarta.style.display = 'none';
+                } else {
+                    pancarta.style.display = 'block';
+                    
+                    if(miEntidad.position !== null && miEntidad.position !== undefined){
+                    var position = miEntidad.position.getValue(clock.currentTime);
+                    Cesium.Ellipsoid.WGS84.cartesianToCartographic(position, cartographic);
+                    pancarta.innerHTML =
+                        'Longitud: ' + Cesium.Math.toDegrees(cartographic.longitude).toFixed(3) + ' <br/>' +
+                        'Latitud: ' + Cesium.Math.toDegrees(cartographic.latitude).toFixed(3) + ' <br/>' +
+                        'Altura: ' + (cartographic.height * 0.001) + ' km' + ' <br/>' +
+                        'Tiempo Actual: ' + visor.clock.currentTime + '<br>';
+                    }
+                }
+                //Cargar un geoJSON en un momento dado
+                if(Cesium.JulianDate.secondsDifference(visor.clock.currentTime,visor.clock.startTime)>252 && carga7==false){
+                     agregarGeojson('campin.geojson',false);
+                     carga7=true;
+                }
+            
+            var carga8=false;
+             if (!Cesium.defined(miEntidad)) {
+                    pancarta.style.display = 'none';
+                } else {
+                    pancarta.style.display = 'block';
+                    
+                    if(miEntidad.position !== null && miEntidad.position !== undefined){
+                    var position = miEntidad.position.getValue(clock.currentTime);
+                    Cesium.Ellipsoid.WGS84.cartesianToCartographic(position, cartographic);
+                    pancarta.innerHTML =
+                        'Longitud: ' + Cesium.Math.toDegrees(cartographic.longitude).toFixed(3) + ' <br/>' +
+                        'Latitud: ' + Cesium.Math.toDegrees(cartographic.latitude).toFixed(3) + ' <br/>' +
+                        'Altura: ' + (cartographic.height * 0.001) + ' km' + ' <br/>' +
+                        'Tiempo Actual: ' + visor.clock.currentTime + '<br>';
+                    }
+                }
+                //Cargar un geoJSON en un momento dado
+                if(Cesium.JulianDate.secondsDifference(visor.clock.currentTime,visor.clock.startTime)>275 && carga8==false){
+                     agregarGeojson('UNAL.geojson',false);
+                     carga8=true;
+                }
+            
+            var carga9=false;
+             if (!Cesium.defined(miEntidad)) {
+                    pancarta.style.display = 'none';
+                } else {
+                    pancarta.style.display = 'block';
+                    
+                    if(miEntidad.position !== null && miEntidad.position !== undefined){
+                    var position = miEntidad.position.getValue(clock.currentTime);
+                    Cesium.Ellipsoid.WGS84.cartesianToCartographic(position, cartographic);
+                    pancarta.innerHTML =
+                        'Longitud: ' + Cesium.Math.toDegrees(cartographic.longitude).toFixed(3) + ' <br/>' +
+                        'Latitud: ' + Cesium.Math.toDegrees(cartographic.latitude).toFixed(3) + ' <br/>' +
+                        'Altura: ' + (cartographic.height * 0.001) + ' km' + ' <br/>' +
+                        'Tiempo Actual: ' + visor.clock.currentTime + '<br>';
+                    }
+                }
+                //Cargar un geoJSON en un momento dado
+                if(Cesium.JulianDate.secondsDifference(visor.clock.currentTime,visor.clock.startTime)>335 && carga9==false){
+                     agregarGeojson('cementeriocentral.geojson',false);
+                     carga9=true;
+                }
+            
             });
 
 
